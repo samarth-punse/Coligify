@@ -16,32 +16,32 @@
             <!-- Top Image Section -->
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="220dp">
+                android:layout_height="240dp">
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="225dp"
+                    android:layout_height="240dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/registration_bg" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="220dp"
+                    android:layout_height="240dp"
                     android:orientation="vertical"
                     android:padding="10dp">
 
                     <ImageView
-                        android:layout_width="162dp"
+                        android:layout_width="160dp"
                         android:layout_height="70dp"
                         android:layout_gravity="start"
-                        android:contentDescription="logo"
+                        android:contentDescription="@string/logo"
                         android:src="@drawable/logog1" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="50dp"
-                        android:text="Ace your exam with \nAI bot Rodie\nTop your exam with ease."
+                        android:layout_marginTop="80dp"
+                        android:text="Ace your exam with \nGemini Ai ."
                         android:textColor="#FFFFFF"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -66,14 +66,7 @@
                     android:layout_width="wrap_content"/>
 
 
-                <TextView
-                    android:layout_marginTop="16dp"
-                    android:text="—  Or sign up using your email address  —"
-                    android:textSize="12sp"
-                    android:textColor="#888888"
-                    android:gravity="center"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"/>
+
 
                 <!-- Input Fields -->
                 <EditText
@@ -127,15 +120,6 @@
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:background="@drawable/btn_gradient" />
-
-                <TextView
-                    android:layout_marginTop="14dp"
-                    android:text="Already have an account? Log in"
-                    android:textSize="13sp"
-                    android:textColor="#444444"
-                    android:gravity="center"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"/>
 
             </LinearLayout>
 
