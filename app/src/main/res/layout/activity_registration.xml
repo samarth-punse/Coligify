@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,12 +8,6 @@
     tools:context=".RegistrationActivity">
 
     <?xml version="1.0" encoding="utf-8"?>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:background="#FFFFFF">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,19 +16,19 @@
             <!-- Top Image Section -->
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="260dp">
+                android:layout_height="220dp">
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="225dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/registration_bg" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="220dp"
                     android:orientation="vertical"
-                    android:padding="20dp">
+                    android:padding="10dp">
 
                     <ImageView
                         android:layout_width="162dp"
@@ -44,21 +38,13 @@
                         android:src="@drawable/logog1" />
 
                     <TextView
-                        android:layout_marginTop="100dp"
-                        android:text="Ace your exam with AI bot Rodie,\nTop your exam with ease."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:text="Ace your exam with \nAI bot Rodie\nTop your exam with ease."
                         android:textColor="#FFFFFF"
                         android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"/>
-
-                    <TextView
-                        android:layout_marginTop="4dp"
-                        android:text="Beyond Earth's grasp"
-                        android:textColor="#DDFFFFFF"
-                        android:textSize="13sp"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"/>
+                        android:textStyle="bold" />
 
                 </LinearLayout>
             </FrameLayout>
@@ -73,42 +59,12 @@
 
                 <TextView
                     android:text="Create Account"
-                    android:textSize="22sp"
+                    android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="#1C1C1C"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"/>
 
-                <!-- Google & Facebook -->
-                <LinearLayout
-                    android:layout_marginTop="16dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="2">
-
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="44dp"
-                        android:layout_weight="1"
-                        android:text="Sign up with Google"
-                        android:textSize="12sp"
-                        android:textColor="#FFFFFF"
-                        android:background="@drawable/btn_google" />
-
-                    <Space
-                        android:layout_width="10dp"
-                        android:layout_height="wrap_content" />
-
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="44dp"
-                        android:layout_weight="1"
-                        android:text="with Facebook"
-                        android:textSize="12sp"
-                        android:textColor="#000000"
-                        android:background="@drawable/btn_facebook"/>
-                </LinearLayout>
 
                 <TextView
                     android:layout_marginTop="16dp"
@@ -184,7 +140,4 @@
             </LinearLayout>
 
         </LinearLayout>
-    </ScrollView>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>

@@ -95,6 +95,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
+                android:id="@+id/login_button"
                 android:text="Login"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
@@ -105,14 +106,12 @@
                 android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Are You New Member ? Sign UP"
+                android:text="you New Member ? Sign UP"
                 android:textColor="#E0FFFFFF"
                 android:textSize="13sp"
                 android:layout_gravity="center" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
