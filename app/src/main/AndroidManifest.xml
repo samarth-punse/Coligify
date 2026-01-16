@@ -2,23 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />
-    <uses-feature
-        android:name="android.hardware.telephony"
-        android:required="false" />
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.SEND_SMS" />
-
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -30,9 +13,11 @@
         android:theme="@style/Theme.Coligify"
         tools:targetApi="31">
         <activity
-            android:name=".AI_ChatActivity"
+            android:name=".RegistrationActivity"
             android:exported="false" />
-        <!-- Splash OR Main Launcher (choose ONE) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -41,17 +26,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- Home Activity -->
-        <activity
-            android:name=".HomeActivity"
-            android:exported="false" /> <!-- Login Activity -->
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" /> <!-- Registration Activity -->
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+        </activity>
     </application>
 
 </manifest>
