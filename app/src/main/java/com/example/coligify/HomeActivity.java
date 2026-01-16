@@ -19,33 +19,26 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class HomeActivity extends AppCompatActivity
         implements BottomNavigationView.OnItemSelectedListener {
 
-    BottomNavigationView bottomNavigationView;
-    FloatingActionButton actionButton;
+    // Views
+    private BottomNavigationView bottomNavigationView;
+    private FloatingActionButton fabAi;
 
-    Fragment homeFragment;
-    Fragment collegeFinderFragment;
-    Fragment contentFragment;
-    Fragment notificationFragment;
+    // Fragments
+    private Fragment homeFragment;
+    private Fragment collegeFinderFragment;
+    private Fragment contentFragment;
+    private Fragment notificationFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        // Initialize views
         bottomNavigationView = findViewById(R.id.bottom_navigation);
+        fabAi = findViewById(R.id.fab_ai);
+
         bottomNavigationView.setOnItemSelectedListener(this);
-
-        actionButton = findViewById(R.id.fab_ai);
-
-        // ✅ FIXED CONTEXT HERE
-        actionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, AI_ChatActivity.class);
-                startActivity(intent);
-
-            }
-        });
 
         // Initialize fragments
         homeFragment = new HomeFragment();
@@ -60,41 +53,47 @@ public class HomeActivity extends AppCompatActivity
                     .replace(R.id.home, homeFragment)
                     .commit();
         }
+
+        // Floating Action Button → Open AI Chat Activity
+        fabAi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, AI_ChatActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-        int id = menuItem.getItemId();
+        int id = item.getItemId();
+        Fragment selectedFragment = null;
 
         if (id == R.id.nav_home) {
-
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.home, homeFragment)
-                    .commit();
+            selectedFragment = homeFragment;
 
         } else if (id == R.id.nav_college) {
-
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.home, collegeFinderFragment)
-                    .commit();
+            selectedFragment = collegeFinderFragment;
 
         } else if (id == R.id.nav_content) {
-
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.home, notificationFragment)
-                    .commit();
+            selectedFragment = notificationFragment;
         }
 
-        return true;
+        if (selectedFragment != null) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.home, selectedFragment)
+                    .commit();
+            return true;
+        }
+
+        return false;
     }
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
-        finishAffinity(); // exit app cleanly
+        // Exit app completely
+        finishAffinity();
     }
 }

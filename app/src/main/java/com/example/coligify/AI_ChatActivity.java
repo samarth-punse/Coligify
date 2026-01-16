@@ -82,7 +82,7 @@ public class AI_ChatActivity extends AppCompatActivity {
 
     /* ================= GEMINI ================= */
     // 🔐 USE API KEY FROM https://aistudio.google.com/app/apikey
-    private static final String API_KEY = "AIzaSyBIiX0DZ3YdAf7JTWoPHNfM8O6uKd3lJ-s";
+    private static final String API_KEY = "AIzaSyA7njnuWkqQDYoYs3PEYt3R7Ia4n7KEL30";
 
     // ✅ SAFE & AVAILABLE MODEL
     private static final String API_URL =
