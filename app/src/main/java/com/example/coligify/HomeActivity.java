@@ -12,39 +12,46 @@ import androidx.fragment.app.Fragment;
 import com.example.coligify.Fragment.CollegeFinderFragment;
 import com.example.coligify.Fragment.ContentFragment;
 import com.example.coligify.Fragment.HomeFragment;
-import com.example.coligify.Fragment.NotificationFragment;
+import com.example.coligify.Fragment.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class HomeActivity extends AppCompatActivity
         implements BottomNavigationView.OnItemSelectedListener {
 
-    // Views
-    private BottomNavigationView bottomNavigationView;
-    private FloatingActionButton fabAi;
+    BottomNavigationView bottomNavigationView;
+    FloatingActionButton actionButton;
 
-    // Fragments
-    private Fragment homeFragment;
-    private Fragment collegeFinderFragment;
-    private Fragment contentFragment;
-    private Fragment notificationFragment;
+    Fragment homeFragment;
+    Fragment collegeFinderFragment;
+    Fragment contentFragment;
+    Fragment profileFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        // Initialize views
         bottomNavigationView = findViewById(R.id.bottom_navigation);
-        fabAi = findViewById(R.id.fab_ai);
-
         bottomNavigationView.setOnItemSelectedListener(this);
+
+        actionButton = findViewById(R.id.fab_ai);
+
+        // ✅ FIXED CONTEXT HERE
+        actionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, AI_ChatActivity.class);
+                startActivity(intent);
+
+            }
+        });
 
         // Initialize fragments
         homeFragment = new HomeFragment();
         collegeFinderFragment = new CollegeFinderFragment();
         contentFragment = new ContentFragment();
-        notificationFragment = new NotificationFragment();
+        profileFragment = new ProfileFragment();
 
         // Load default fragment
         if (savedInstanceState == null) {
@@ -53,47 +60,41 @@ public class HomeActivity extends AppCompatActivity
                     .replace(R.id.home, homeFragment)
                     .commit();
         }
-
-        // Floating Action Button → Open AI Chat Activity
-        fabAi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, AI_ChatActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
-        int id = item.getItemId();
-        Fragment selectedFragment = null;
+        int id = menuItem.getItemId();
 
         if (id == R.id.nav_home) {
-            selectedFragment = homeFragment;
 
-        } else if (id == R.id.nav_college) {
-            selectedFragment = collegeFinderFragment;
-
-        } else if (id == R.id.nav_content) {
-            selectedFragment = notificationFragment;
-        }
-
-        if (selectedFragment != null) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.home, selectedFragment)
+                    .replace(R.id.home, homeFragment)
                     .commit();
-            return true;
+
+        } else if (id == R.id.nav_college) {
+
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.home, collegeFinderFragment)
+                    .commit();
+
+        } else if (id == R.id.nav_content) {
+
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.home, profileFragment)
+                    .commit();
         }
 
-        return false;
+        return true;
     }
 
     @Override
     public void onBackPressed() {
-        // Exit app completely
-        finishAffinity();
+        super.onBackPressed();
+        finishAffinity(); // exit app cleanly
     }
 }
