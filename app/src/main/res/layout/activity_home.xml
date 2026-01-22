@@ -59,43 +59,7 @@
                     android:textSize="15sp"
                     android:textStyle="bold"/>
 
-                <!-- Mood Card -->
-                <androidx.cardview.widget.CardView
-                    android:layout_marginTop="16dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="18dp"
-                    app:cardBackgroundColor="#33FFFFFF">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="16dp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_height="60px"
-                            android:layout_width="60px"
-                            app:tint="@android:color/white"
-                            android:src="@drawable/ai"/>
-
-                        <TextView
-                            android:layout_height="wrap_content"
-                            android:layout_width="wrap_content"
-                            android:layout_marginStart="12dp"
-                            android:text="What is Software?"
-                            android:textColor="#FFFFFF"
-                            android:textSize="14sp"
-                            android:paddingRight="160dp"/>
-
-                        <ImageView
-                            android:layout_height="60px"
-                            android:layout_width="60px"
-                            app:tint="@android:color/white"
-                            android:src="@drawable/mic_icon"/>
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
 
                 <!-- Recently Played -->
                 <TextView
