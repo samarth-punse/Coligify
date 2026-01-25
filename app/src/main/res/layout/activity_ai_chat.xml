@@ -41,7 +41,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:layout_marginBottom="15dp"
-                android:fontFamily="@font/poppins_medium"
+                android:fontFamily="sans-serif"
                 android:text="Gemini"
                 android:textColor="@color/black"
                 android:textSize="26sp"
