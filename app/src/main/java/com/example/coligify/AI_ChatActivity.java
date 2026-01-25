@@ -80,7 +80,7 @@ public class AI_ChatActivity extends AppCompatActivity {
     private final ArrayList<ChatMessage> currentMessages = new ArrayList<>();
 
     /* ================= GEMINI ================= */
-    private static final String API_KEY = "AIzaSyDlqFAGPm2Q8Twwm44HwLVZkAkfwpZNyi4";
+    private static final String API_KEY = "AIzaSyDiL1mgv_V0gEcji36rtVmqESPu8kyh0Yw";
     private static final String API_URL =
             "https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash:generateContent?key=" + API_KEY;
 
@@ -474,7 +474,6 @@ public class AI_ChatActivity extends AppCompatActivity {
                                 getFileName(r.getData().getData()));
                     }
                 });
-
         ivAdd.setOnClickListener(v -> {
             Intent i = new Intent(Intent.ACTION_OPEN_DOCUMENT);
             i.addCategory(Intent.CATEGORY_OPENABLE);

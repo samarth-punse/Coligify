@@ -80,6 +80,12 @@ public class HomeActivity extends AppCompatActivity
                     .beginTransaction()
                     .replace(R.id.home, collegeFinderFragment)
                     .commit();
+        } else if (id == R.id.nav_ai) {
+
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.home, contentFragment)
+                    .commit();
 
         } else if (id == R.id.nav_content) {
 
