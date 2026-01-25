@@ -29,6 +29,9 @@
         android:theme="@style/Theme.Coligify"
         tools:targetApi="31">
         <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".My_Profile_Activity"
             android:exported="false" />
         <activity
