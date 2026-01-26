@@ -1,28 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFF">
 
-    <!-- Background -->
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/bg_purple" />
-
-    <!-- Glass Card -->
-    <androidx.cardview.widget.CardView
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="24dp"
-        app:cardCornerRadius="28dp"
-        app:cardElevation="12dp"
-        app:cardBackgroundColor="#40FFFFFF"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,6 +16,7 @@
             <ImageView
                 android:layout_width="193dp"
                 android:layout_height="75dp"
+                android:layout_marginTop="40dp"
                 android:layout_gravity="center"
                 android:contentDescription="logo"
                 android:src="@drawable/logog1" />
@@ -43,9 +26,9 @@
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Create your account"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp"
+                android:text="Register here"
+                android:textColor="#010042"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_gravity="center"/>
 
@@ -56,8 +39,18 @@
                 android:layout_height="48dp"
                 android:hint="Full name"
                 android:background="@drawable/edit_bg"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#CCFFFFFF"
+                android:textColor="#010042"
+                android:textColorHint="#99999B"
+                android:padding="14dp"/>
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Mobile no."
+                android:background="@drawable/edit_bg"
+                android:textColor="#010042"
+                android:textColorHint="#99999B"
                 android:padding="14dp"/>
 
             <!-- Email -->
@@ -67,9 +60,19 @@
                 android:layout_height="48dp"
                 android:hint="Email address"
                 android:background="@drawable/edit_bg"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#CCFFFFFF"
+                android:textColor="#010042"
+                android:textColorHint="#99999B"
                 android:inputType="textEmailAddress"
+                android:padding="14dp"/>
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="User name"
+                android:background="@drawable/edit_bg"
+                android:textColor="#010042"
+                android:textColorHint="#99999B"
                 android:padding="14dp"/>
 
             <!-- Password -->
@@ -79,22 +82,11 @@
                 android:layout_height="48dp"
                 android:hint="Password"
                 android:background="@drawable/edit_bg"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#CCFFFFFF"
+                android:textColor="#010042"
+                android:textColorHint="#99999B"
                 android:inputType="textPassword"
                 android:padding="14dp"/>
 
-            <!-- Confirm Password -->
-            <EditText
-                android:layout_marginTop="12dp"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:hint="Confirm password"
-                android:background="@drawable/edit_bg"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#CCFFFFFF"
-                android:inputType="textPassword"
-                android:padding="14dp"/>
 
             <!-- Register Button -->
             <androidx.appcompat.widget.AppCompatButton
@@ -104,19 +96,19 @@
                 android:text="REGISTER"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:background="@drawable/btn_gradient"/>
+                android:textSize="18dp"
+                android:background="#010042"/>
 
             <!-- Login Link -->
             <TextView
                 android:layout_marginTop="14dp"
                 android:text="Already have an account? Login"
-                android:textColor="#E0FFFFFF"
+                android:textColor="#010042"
                 android:textSize="12sp"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"/>
 
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

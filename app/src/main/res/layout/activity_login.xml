@@ -1,36 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
-
-    <!-- Background -->
-    <ImageView
-        android:id="@+id/bgImage"
-        android:fitsSystemWindows="true"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/login_bg"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
-
-    <!-- Glass Card -->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/glassCard"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="24dp"
-        app:cardCornerRadius="28dp"
-        app:cardElevation="14dp"
-        app:cardBackgroundColor="#40FFFFFF"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+    tools:context=".LoginActivity"
+    android:background="#FFFF">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,6 +19,7 @@
                 android:layout_width="193dp"
                 android:layout_height="75dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="60dp"
                 android:contentDescription="logo"
                 android:src="@drawable/logog1" />
 
@@ -52,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Create your account"
-                android:textColor="#FFFFFF"
+                android:textColor="#010042"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_gravity="center" />
@@ -65,8 +42,8 @@
                 android:hint="Email address"
                 android:padding="14dp"
                 android:background="@drawable/edit_bg"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#BFFFFFFF"
+                android:textColor="#010042"
+                android:textColorHint="#99999B"
                 android:inputType="textEmailAddress" />
 
             <!-- Password -->
@@ -77,8 +54,8 @@
                 android:hint="Password"
                 android:padding="14dp"
                 android:background="@drawable/edit_bg"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#BFFFFFFF"
+                android:textColor="#010042"
+                android:textColorHint="#99999B"
                 android:inputType="textPassword" />
 
             <!-- Forgot Password -->
@@ -87,7 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Forget Password ?"
-                android:textColor="#D0FFFFFF"
+                android:textColor="#010042"
                 android:textSize="12sp"
                 android:layout_gravity="end" />
 
@@ -101,7 +78,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:background="@drawable/btn_gradient" />
+                android:background="#010042" />
 
             <!-- Sign Up -->
             <TextView
@@ -109,11 +86,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="you New Member ? Sign UP"
-                android:textColor="#E0FFFFFF"
+                android:textColor="#010042"
                 android:textSize="13sp"
                 android:layout_gravity="center" />
 
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
