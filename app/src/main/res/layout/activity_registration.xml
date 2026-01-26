@@ -2,7 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
 
     <!-- Background -->
     <ImageView
@@ -54,6 +55,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
+                android:id="@+id/etregistername"
                 android:hint="Full name"
                 android:background="@drawable/edit_bg"
                 android:textColor="#FFFFFF"
@@ -63,6 +65,7 @@
             <!-- Email -->
             <EditText
                 android:layout_marginTop="12dp"
+                android:id="@+id/etregisteremail"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:hint="Email address"
