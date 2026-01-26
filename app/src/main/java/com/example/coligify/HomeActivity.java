@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import com.example.coligify.Fragment.CollegeFinderFragment;
 import com.example.coligify.Fragment.ContentFragment;
 import com.example.coligify.Fragment.HomeFragment;
-import com.example.coligify.Fragment.ProfileFragment;
+import com.example.coligify.Fragment.NotificationFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -51,7 +51,7 @@ public class HomeActivity extends AppCompatActivity
         homeFragment = new HomeFragment();
         collegeFinderFragment = new CollegeFinderFragment();
         contentFragment = new ContentFragment();
-        profileFragment = new ProfileFragment();
+        profileFragment = new NotificationFragment();
 
         // Load default fragment
         if (savedInstanceState == null) {

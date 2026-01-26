@@ -2,8 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white">
+    android:layout_height="match_parent">
 
     <!-- Background -->
     <ImageView
@@ -57,8 +56,8 @@
                 android:layout_height="48dp"
                 android:hint="Full name"
                 android:background="@drawable/edit_bg"
-                android:textColor="#020145"
-                android:textColorHint="#020145"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#CCFFFFFF"
                 android:padding="14dp"/>
 
             <!-- Email -->
