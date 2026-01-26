@@ -35,7 +35,7 @@
             android:layout_height="110dp"
             app:cardCornerRadius="18dp"
             app:cardElevation="6dp"
-            app:cardBackgroundColor="#441fa8">
+            app:cardBackgroundColor="#441ea6">
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -83,7 +83,7 @@
             android:layout_height="110dp"
             app:cardCornerRadius="18dp"
             app:cardElevation="6dp"
-            app:cardBackgroundColor="#431fa6">
+            app:cardBackgroundColor="#4721aa">
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -93,9 +93,9 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:src="@drawable/first_year"
+                    android:layout_width="130dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/second_year"
                     android:padding="12dp"/>
 
                 <LinearLayout
@@ -131,7 +131,7 @@
             android:layout_height="110dp"
             app:cardCornerRadius="18dp"
             app:cardElevation="6dp"
-            app:cardBackgroundColor="#3207BA">
+            app:cardBackgroundColor="#17517a">
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -141,10 +141,9 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:src="@drawable/first_year"
-
+                    android:layout_width="130dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/third_year"
                     android:padding="12dp"/>
 
                 <LinearLayout
@@ -179,7 +178,7 @@
             android:layout_height="110dp"
             app:cardCornerRadius="18dp"
             app:cardElevation="6dp"
-            app:cardBackgroundColor="#3207BA">
+            app:cardBackgroundColor="#e03e1c">
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -189,10 +188,9 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:src="@drawable/first_year"
-
+                    android:layout_width="130dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/itr_training"
                     android:padding="12dp"/>
 
                 <LinearLayout
@@ -227,7 +225,7 @@
             android:layout_height="110dp"
             app:cardCornerRadius="18dp"
             app:cardElevation="6dp"
-            app:cardBackgroundColor="#3207BA">
+            app:cardBackgroundColor="#1c765a">
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -237,10 +235,9 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:src="@drawable/first_year"
-
+                    android:layout_width="130dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/extra_content"
                     android:padding="12dp"/>
 
                 <LinearLayout
