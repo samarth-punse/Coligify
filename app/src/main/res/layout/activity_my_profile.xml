@@ -381,6 +381,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:id="@+id/llLogout"
                 android:padding="16dp"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">

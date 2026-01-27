@@ -33,9 +33,7 @@ public class NotificationFragment extends Fragment {
 
         notificationList = new ArrayList<>();
 
-        // 🔹 Example data (remove to test empty page)
-        // notificationList.add("Price Alert");
-        // notificationList.add("ETH Sent");
+
 
         if (notificationList.isEmpty()) {
             // Show empty notification page
