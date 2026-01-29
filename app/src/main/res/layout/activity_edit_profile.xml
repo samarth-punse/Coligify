@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:fitsSystemWindows="true"
-    android:background="#6A5AE0">
+    android:background="#FFFFFF">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:text="Edit Profile"
             android:textSize="25sp"
-            android:textColor="@color/white"
+            android:textColor="#010042"
             android:fontFamily="@font/agbalumo"
             app:layout_constraintTop_toTopOf="@id/ivBack"
             app:layout_constraintBottom_toBottomOf="@id/ivBack"
@@ -101,7 +101,7 @@
                 android:inputType="textMultiLine"
                 android:minWidth="48dp"
                 android:text="Name"
-                android:textColor="@color/white"
+                android:textColor="#010042"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -114,8 +114,8 @@
                 android:id="@+id/etprofilename"
                 android:inputType="textMultiLine"
                 android:background="@drawable/edit_bg"
-                android:textColor="@color/white"
-                android:textColorHint="#BFFFFFFF"
+                android:textColor="#010042"
+                android:textColorHint="#99999B"
                 android:paddingStart="14dp" />
 
             <TextView
@@ -127,7 +127,7 @@
                 android:text="Mobile Number"
                 android:fontFamily="@font/actor"
                 android:textStyle="bold"
-                android:textColor="@color/white"
+                android:textColor="#010042"
                 android:textSize="18sp"
                 app:layout_constraintTop_toBottomOf="@id/etprofilename"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -141,8 +141,8 @@
                 android:id="@+id/etprofilemob"
                 android:maxLength="10"
                 android:background="@drawable/edit_bg"
-                android:textColor="@color/white"
-                android:textColorHint="#BFFFFFFF"
+                android:textColor="#010042"
+                android:textColorHint="#99999B"
                 android:paddingStart="14dp" />
 
 
@@ -154,7 +154,7 @@
                 android:layout_marginTop="20dp"
                 android:text="Email Address"
                 android:fontFamily="@font/actor"
-                android:textColor="@color/white"
+                android:textColor="#010042"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 app:layout_constraintTop_toBottomOf="@id/etprofilemob"
@@ -168,8 +168,8 @@
                 android:hint="Enter Email Address"
                 android:inputType="textEmailAddress"
                 android:background="@drawable/edit_bg"
-                android:textColor="@color/white"
-                android:textColorHint="#BFFFFFFF"
+                android:textColor="#010042"
+                android:textColorHint="#99999B"
                 android:id="@+id/etprofileemailaddress"
                 android:paddingStart="14dp" />
 
@@ -182,7 +182,7 @@
                 android:layout_marginTop="20dp"
                 android:text="Password"
                 android:fontFamily="@font/actor"
-                android:textColor="@color/white"
+                android:textColor="#010042"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 app:layout_constraintTop_toBottomOf="@id/etprofileemailaddress"
@@ -194,9 +194,9 @@
                 android:hint="Enter Password"
                 android:inputType="textPassword"
                 android:background="@drawable/edit_bg"
-                android:textColor="@color/white"
+                android:textColor="#010042"
+                android:textColorHint="#99999B"
                 android:id="@+id/etprofilepassword"
-                android:textColorHint="#BFFFFFFF"
                 android:paddingStart="14dp" />
 
             <!-- USERNAME -->
@@ -208,7 +208,7 @@
                 android:layout_marginTop="20dp"
                 android:text="User Name"
                 android:fontFamily="@font/actor"
-                android:textColor="@color/white"
+                android:textColor="#010042"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 app:layout_constraintTop_toBottomOf="@id/etprofilepassword"
@@ -220,8 +220,8 @@
                 android:hint="Enter User Name"
                 android:inputType="textMultiLine"
                 android:background="@drawable/edit_bg"
-                android:textColor="@color/white"
-                android:textColorHint="#BFFFFFFF"
+                android:textColor="#010042"
+                android:textColorHint="#99999B"
                 android:paddingStart="14dp" />
 
         </LinearLayout>

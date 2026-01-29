@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6A5AE0"
-    android:fitsSystemWindows="true"
-    android:fillViewport="true">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#6A5AE0">
 
     <LinearLayout
         android:orientation="vertical"
@@ -32,12 +30,9 @@
 
         <!-- FIRST YEAR -->
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardFirstYear"
             android:layout_marginTop="24dp"
             android:layout_width="match_parent"
             android:layout_height="110dp"
-            android:clickable="true"
-            android:focusable="true"
             app:cardCornerRadius="18dp"
             app:cardElevation="6dp"
             app:cardBackgroundColor="#441ea6">
@@ -53,8 +48,7 @@
                     android:layout_width="130dp"
                     android:layout_height="110dp"
                     android:src="@drawable/first_year"
-                    android:padding="12dp"
-                    android:contentDescription="First Year"/>
+                    android:padding="12dp"/>
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -84,12 +78,9 @@
 
         <!-- SECOND YEAR -->
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardSecondYear"
             android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="110dp"
-            android:clickable="true"
-            android:focusable="true"
             app:cardCornerRadius="18dp"
             app:cardElevation="6dp"
             app:cardBackgroundColor="#4721aa">
@@ -105,8 +96,7 @@
                     android:layout_width="130dp"
                     android:layout_height="110dp"
                     android:src="@drawable/second_year"
-                    android:padding="12dp"
-                    android:contentDescription="Second Year"/>
+                    android:padding="12dp"/>
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -115,20 +105,20 @@
                     android:layout_height="wrap_content">
 
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="Second Year"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:textColor="#FFFFFF"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:textColor="#FFFFFF"/>
 
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="Core Technical Subjects"
                         android:textSize="13sp"
                         android:textColor="#A8B1FF"
-                        android:layout_marginTop="4dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_marginTop="4dp"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -136,12 +126,9 @@
 
         <!-- THIRD YEAR -->
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardThirdYear"
             android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="110dp"
-            android:clickable="true"
-            android:focusable="true"
             app:cardCornerRadius="18dp"
             app:cardElevation="6dp"
             app:cardBackgroundColor="#17517a">
@@ -157,8 +144,7 @@
                     android:layout_width="130dp"
                     android:layout_height="110dp"
                     android:src="@drawable/third_year"
-                    android:padding="12dp"
-                    android:contentDescription="Third Year"/>
+                    android:padding="12dp"/>
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -167,33 +153,29 @@
                     android:layout_height="wrap_content">
 
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="Third Year"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:textColor="#FFFFFF"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:textColor="#FFFFFF"/>
 
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="Advanced and Project Subjects"
                         android:textSize="13sp"
                         android:textColor="#A8B1FF"
-                        android:layout_marginTop="4dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_marginTop="4dp"/>
                 </LinearLayout>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- INTERNSHIP -->
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardInternship"
             android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="110dp"
-            android:clickable="true"
-            android:focusable="true"
             app:cardCornerRadius="18dp"
             app:cardElevation="6dp"
             app:cardBackgroundColor="#e03e1c">
@@ -209,8 +191,7 @@
                     android:layout_width="130dp"
                     android:layout_height="110dp"
                     android:src="@drawable/itr_training"
-                    android:padding="12dp"
-                    android:contentDescription="Internship Training"/>
+                    android:padding="12dp"/>
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -219,33 +200,29 @@
                     android:layout_height="wrap_content">
 
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="Internship Training"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:textColor="#FFFFFF"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:textColor="#FFFFFF"/>
 
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="Learn Real life Projects"
                         android:textSize="13sp"
                         android:textColor="#A8B1FF"
-                        android:layout_marginTop="4dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_marginTop="4dp"/>
                 </LinearLayout>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- EXTRA CONTENT -->
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardExtraContent"
             android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="110dp"
-            android:clickable="true"
-            android:focusable="true"
             app:cardCornerRadius="18dp"
             app:cardElevation="6dp"
             app:cardBackgroundColor="#1c765a">
@@ -261,8 +238,7 @@
                     android:layout_width="130dp"
                     android:layout_height="110dp"
                     android:src="@drawable/extra_content"
-                    android:padding="12dp"
-                    android:contentDescription="Extra Content"/>
+                    android:padding="12dp"/>
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -271,20 +247,20 @@
                     android:layout_height="wrap_content">
 
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="Extra Content"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:textColor="#FFFFFF"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:textColor="#FFFFFF"/>
 
                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="Hard and Soft Skills"
                         android:textSize="13sp"
                         android:textColor="#A8B1FF"
-                        android:layout_marginTop="4dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_marginTop="4dp"/>
                 </LinearLayout>
 
             </LinearLayout>

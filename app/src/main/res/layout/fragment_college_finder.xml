@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#6A5AE0"
+    android:background="#FFFFFF"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -15,7 +15,7 @@
             android:text="🎓 Find Your Perfect College"
             android:textSize="22sp"
             android:textStyle="bold"
-            android:textColor="#FFFFFF"
+            android:textColor="#010042"
             android:layout_marginTop="30sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -23,7 +23,7 @@
         <TextView
             android:text="Enter your details below"
             android:textSize="14sp"
-            android:textColor="#F6F4F4"
+            android:textColor="#010042"
             android:layout_marginTop="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -40,7 +40,7 @@
             <!-- Category -->
             <TextView
                 android:text="Category"
-                android:textColor="#FFFFFF"
+                android:textColor="#010042"
                 android:textSize="14sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -53,13 +53,13 @@
                 android:padding="14dp"
                 android:background="@drawable/edit_bg"
                 android:textColor="#FFFFFF"
-                android:textColorHint="#BFFFFFFF"
+                android:textColorHint="#99999B"
                 android:inputType="textEmailAddress" />
 
             <!-- Marks -->
             <TextView
                 android:text="Final Year Percentage"
-                android:textColor="#FFFFFF"
+                android:textColor="#010042"
                 android:textSize="14sp"
                 android:layout_marginTop="16dp"
                 android:layout_width="wrap_content"
@@ -73,13 +73,13 @@
                 android:padding="14dp"
                 android:background="@drawable/edit_bg"
                 android:textColor="#FFFFFF"
-                android:textColorHint="#BFFFFFFF"
+                android:textColorHint="#99999B"
                 android:inputType="textEmailAddress" />
 
             <!-- City -->
             <TextView
                 android:text="Preferred City"
-                android:textColor="#FFFFFF"
+                android:textColor="#010042"
                 android:textSize="14sp"
                 android:layout_marginTop="16dp"
                 android:layout_width="wrap_content"
@@ -93,13 +93,13 @@
                 android:padding="14dp"
                 android:background="@drawable/edit_bg"
                 android:textColor="#FFFFFF"
-                android:textColorHint="#BFFFFFFF"
+                android:textColorHint="#99999B"
                 android:inputType="textEmailAddress" />
 
             <!-- Budget -->
             <TextView
                 android:text="Maximum Fees Budget (per year)"
-                android:textColor="#FFFFFF"
+                android:textColor="#010042"
                 android:textSize="14sp"
                 android:layout_marginTop="16dp"
                 android:layout_width="wrap_content"
@@ -113,7 +113,7 @@
                 android:padding="14dp"
                 android:background="@drawable/edit_bg"
                 android:textColor="#FFFFFF"
-                android:textColorHint="#BFFFFFFF"
+                android:textColorHint="#99999B"
                 android:inputType="textEmailAddress" />
 
             <!-- Button -->
@@ -122,7 +122,7 @@
                 android:text="Find Colleges"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
-                android:backgroundTint="#3207BA"
+                android:backgroundTint="#010042"
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:layout_marginTop="24dp"
