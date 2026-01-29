@@ -92,7 +92,7 @@ public class HomeActivity extends AppCompatActivity
         View view = getLayoutInflater().inflate(R.layout.dialog_welcome, null);
         builder.setView(view);
 
-      
+
         ImageView logo = view.findViewById(R.id.ivimglogo);
 
         // 🔍 Make logo look BIG
@@ -145,6 +145,7 @@ public class HomeActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
+        super.onBackPressed();
         finishAffinity(); // Exit app completely
     }
 }
