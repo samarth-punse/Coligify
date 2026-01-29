@@ -33,7 +33,7 @@
                 android:layout_height="24dp"
                 android:layout_marginBottom="17dp"
                 android:src="@drawable/back_button"
-                app:tint="@color/black" />
+                app:tint="#010042" />
 
             <TextView
                 android:layout_width="0dp"
@@ -43,7 +43,7 @@
                 android:layout_marginBottom="15dp"
                 android:fontFamily="sans-serif"
                 android:text="Gemini"
-                android:textColor="@color/black"
+                android:textColor="#010042"
                 android:textSize="26sp"
                 android:textStyle="bold" />
 
@@ -54,7 +54,7 @@
                 android:layout_height="24dp"
                 android:layout_marginBottom="18dp"
                 android:src="@drawable/three_dots"
-                app:tint="@color/black" />
+                app:tint="#010042" />
         </LinearLayout>
 
         <!-- ================= CHAT CONTENT ================= -->
@@ -100,7 +100,7 @@
                     android:layout_width="18dp"
                     android:layout_height="18dp"
                     android:src="@drawable/add"
-                    app:tint="@color/black" />
+                    app:tint="#010042" />
 
                 <!-- MESSAGE INPUT -->
                 <EditText
@@ -124,11 +124,11 @@
                 <!-- MIC -->
                 <ImageView
                     android:id="@+id/btnMic"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
                     android:layout_marginStart="8dp"
                     android:src="@android:drawable/ic_btn_speak_now"
-                    app:tint="@color/black" />
+                    app:tint="#010042" />
 
                 <!-- SEND -->
                 <ImageView
@@ -138,7 +138,7 @@
                     android:layout_marginStart="10dp"
                     android:src="@android:drawable/ic_menu_send"
                     android:visibility="gone"
-                    app:tint="@color/black" />
+                    app:tint="#010042" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
