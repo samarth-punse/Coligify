@@ -16,7 +16,8 @@
         android:layout_marginTop="16dp"
         android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/black" />
 
     <!-- Title -->
     <TextView
@@ -41,7 +42,8 @@
         android:layout_marginEnd="16dp"
         android:src="@drawable/ic_settings"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/btnBack"/>
+        app:layout_constraintTop_toTopOf="@id/btnBack"
+        app:tint="@color/black" />
 
     <!-- Profile Card -->
     <androidx.cardview.widget.CardView
@@ -61,8 +63,8 @@
             android:layout_height="130dp"
             android:orientation="horizontal"
             android:padding="16dp"
+            android:layout_marginTop="10dp"
             android:gravity="center_vertical">
-
 
             <FrameLayout
                 android:layout_width="90dp"
@@ -75,7 +77,6 @@
                     android:src="@drawable/ic_samarth"
                     android:scaleType="centerCrop"
                     app:civ_border_width="2dp"/>
-
             </FrameLayout>
 
             <!-- User Info -->
@@ -112,12 +113,11 @@
                     app:cardBackgroundColor="#E53935">
 
                     <TextView
+                        android:id="@+id/tveditprofile"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Edit Profile"
-                        android:id="@+id/tveditprofile"
                         android:textColor="#FFFFFF"
-                        android:fontFamily="sans-serif"
                         android:textSize="14sp"
                         android:gravity="center"/>
                 </androidx.cardview.widget.CardView>
@@ -132,7 +132,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintTop_toBottomOf="@id/cardProfile"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -145,31 +145,27 @@
             android:layout_marginHorizontal="16dp"
             android:layout_marginBottom="8dp"
             app:cardCornerRadius="16dp"
-            app:cardElevation="2dp"
-            android:background="@drawable/edit_bg">
+            app:cardElevation="2dp">
 
             <LinearLayout
+                android:id="@+id/llFavourites"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="16dp"
-                android:id="@+id/llFavourites"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="26dp"
                     android:layout_height="26dp"
-                    android:src="@drawable/ic_like"
-                    android:padding="1dp"
-                    android:scaleType="fitCenter"/>
+                    android:src="@drawable/clock"/>
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Favourites"
+                    android:text="Watch Later"
                     android:textSize="16sp"
-                    android:textColor="@color/black"
                     android:layout_marginStart="16dp"/>
 
                 <ImageView
@@ -189,6 +185,7 @@
             app:cardElevation="2dp">
 
             <LinearLayout
+                android:id="@+id/llDownloads"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="16dp"
@@ -198,9 +195,7 @@
                 <ImageView
                     android:layout_width="26dp"
                     android:layout_height="26dp"
-                    android:src="@drawable/ic_downloads"
-                    android:scaleType="fitCenter"
-                    android:padding="1dp"/>
+                    android:src="@drawable/ic_downloads"/>
 
                 <TextView
                     android:layout_width="0dp"
@@ -208,7 +203,6 @@
                     android:layout_weight="1"
                     android:text="Downloads"
                     android:textSize="16sp"
-                    android:textColor="#000"
                     android:layout_marginStart="16dp"/>
 
                 <ImageView
@@ -228,6 +222,7 @@
             app:cardElevation="2dp">
 
             <LinearLayout
+                android:id="@+id/llLanguage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="16dp"
@@ -237,9 +232,7 @@
                 <ImageView
                     android:layout_width="26dp"
                     android:layout_height="26dp"
-                    android:src="@drawable/ic_language"
-                    android:scaleType="fitCenter"
-                    android:padding="1dp"/>
+                    android:src="@drawable/ic_language"/>
 
                 <TextView
                     android:layout_width="0dp"
@@ -247,7 +240,6 @@
                     android:layout_weight="1"
                     android:text="Language"
                     android:textSize="16sp"
-                    android:textColor="#000"
                     android:layout_marginStart="16dp"/>
 
                 <ImageView
@@ -257,6 +249,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <!-- Permissions -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="56dp"
@@ -266,6 +259,7 @@
             app:cardElevation="2dp">
 
             <LinearLayout
+                android:id="@+id/llPermissions"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="16dp"
@@ -275,9 +269,7 @@
                 <ImageView
                     android:layout_width="26dp"
                     android:layout_height="26dp"
-                    android:src="@drawable/ic_permisson"
-                    android:scaleType="fitCenter"
-                    android:padding="1dp"/>
+                    android:src="@drawable/ic_permisson"/>
 
                 <TextView
                     android:layout_width="0dp"
@@ -285,7 +277,6 @@
                     android:layout_weight="1"
                     android:text="Permissions"
                     android:textSize="16sp"
-                    android:textColor="#000"
                     android:layout_marginStart="16dp"/>
 
                 <ImageView
@@ -295,7 +286,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Help & Feedback -->
+        <!-- Help -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="56dp"
@@ -305,6 +296,7 @@
             app:cardElevation="2dp">
 
             <LinearLayout
+                android:id="@+id/llHelp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="16dp"
@@ -314,9 +306,7 @@
                 <ImageView
                     android:layout_width="26dp"
                     android:layout_height="26dp"
-                    android:src="@drawable/ic_question"
-                    android:scaleType="fitCenter"
-                    android:padding="1dp"/>
+                    android:src="@drawable/ic_question"/>
 
                 <TextView
                     android:layout_width="0dp"
@@ -324,7 +314,6 @@
                     android:layout_weight="1"
                     android:text="Help &amp; Feedback"
                     android:textSize="16sp"
-                    android:textColor="#000"
                     android:layout_marginStart="16dp"/>
 
                 <ImageView
@@ -334,6 +323,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <!-- About -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="56dp"
@@ -343,6 +333,7 @@
             app:cardElevation="2dp">
 
             <LinearLayout
+                android:id="@+id/llAbout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="16dp"
@@ -352,9 +343,7 @@
                 <ImageView
                     android:layout_width="26dp"
                     android:layout_height="26dp"
-                    android:src="@drawable/ic_about"
-                    android:scaleType="fitCenter"
-                    android:padding="1dp"/>
+                    android:src="@drawable/ic_about"/>
 
                 <TextView
                     android:layout_width="0dp"
@@ -362,7 +351,6 @@
                     android:layout_weight="1"
                     android:text="About Coligify"
                     android:textSize="16sp"
-                    android:textColor="#000"
                     android:layout_marginStart="16dp"/>
 
                 <ImageView
@@ -381,9 +369,9 @@
             app:cardElevation="2dp">
 
             <LinearLayout
+                android:id="@+id/llLogout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/llLogout"
                 android:padding="16dp"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
@@ -391,9 +379,7 @@
                 <ImageView
                     android:layout_width="26dp"
                     android:layout_height="26dp"
-                    android:src="@drawable/ic_logout"
-                    android:padding="1dp"
-                    android:scaleType="fitCenter"/>
+                    android:src="@drawable/ic_logout"/>
 
                 <TextView
                     android:layout_width="0dp"
@@ -401,7 +387,6 @@
                     android:layout_weight="1"
                     android:text="Logout"
                     android:textSize="16sp"
-                    android:textColor="#000"
                     android:layout_marginStart="16dp"/>
 
                 <ImageView

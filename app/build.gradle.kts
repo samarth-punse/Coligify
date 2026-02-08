@@ -56,11 +56,13 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation ("de.hdodenhof:circleimageview:3.1.0")
+    implementation ("androidx.viewpager2:viewpager2:1.0.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation ("com.google.code.gson:gson:2.10.1")
     implementation ("com.google.android.material:material:1.11.0")
     implementation ("androidx.core:core-ktx:1.10.1")
-
+    implementation ("com.github.denzcoskun:ImageSlideshow:0.1.2")
     implementation("com.journeyapps:zxing-android-embedded:4.3.0")
 }

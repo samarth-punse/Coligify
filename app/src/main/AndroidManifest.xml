@@ -30,13 +30,28 @@
         android:theme="@style/Theme.Coligify"
         tools:targetApi="31">
         <activity
-            android:name=".FavouritesActivity"
+            android:name=".CourseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HelpFeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PermissionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LanguageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DownloadsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CombineActivity"
             android:exported="false" />
         <activity
             android:name=".Forgot_Password_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".FavouriteActivity"
             android:exported="false" />
         <activity
             android:name=".EditProfileActivity"

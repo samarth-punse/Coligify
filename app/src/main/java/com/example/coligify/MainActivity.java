@@ -5,26 +5,28 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import com.example.coligify.Utils.CourseSaveManager;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
 
+        // 🔑 STEP 5: INITIALIZE SAVED COURSES (VERY IMPORTANT)
+        CourseSaveManager.init(this);
+
+        // ⏳ Splash delay
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
 
-            //for go to splash screen to login activity.
+            // ➡ Go to LoginActivity
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
             finish();
-            }, 3000);
+
+        }, 3000);
     }
 }
